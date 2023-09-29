@@ -1,0 +1,26 @@
+.container {
+    width: 180px;
+    box-shadow: 0px 0px 10px .5px rgba(0, 0, 0, 0.293);
+    border-radius: 20px;
+    padding: 7px 15px 7px 15px
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    font-size: large;
+    font-family: monospace;
+}
+
+.notifications {
+    font-size: 12px;
+    background-color: #0073cf;
+    color: white;
+    padding: 7px 10px 7px 10px;
+    border-radius: 25px;
+}
