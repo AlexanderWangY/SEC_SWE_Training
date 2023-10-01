@@ -40,7 +40,3 @@ const toProperCase = (name) => {
 
 console.log(toProperCase("aLeXandER"));
 
-console.info("Hello")
-
-
-
