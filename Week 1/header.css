@@ -59,14 +59,14 @@
     
 }
 
-.search-button, .voice-button, .upload-icon-container, .apps-icon-container {
+.search-button, .voice-button, .upload-icon-container, .apps-icon-container, .notification-icon-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.search-button .tooltip, .voice-button .tooltip, .upload-icon-container .tooltip, .apps-icon-container .tooltip {
+.notification-icon-container .tooltip, .search-button .tooltip, .voice-button .tooltip, .upload-icon-container .tooltip, .apps-icon-container .tooltip {
     position: absolute;
     background-color: rgb(119, 119, 119);
     color: white;
@@ -81,11 +81,11 @@
     white-space: nowrap;
 }
 
-.search-button:hover, .upload-icon-container:hover, .apps-icon-container:hover {
+.search-button:hover, .upload-icon-container:hover, .apps-icon-container:hover, .notification-icon-container:hover {
     cursor: pointer;
 }
 
-.search-button:hover .tooltip, .voice-button:hover .tooltip, .upload-icon-container:hover .tooltip, .apps-icon-container:hover .tooltip{
+.search-button:hover .tooltip, .voice-button:hover .tooltip, .upload-icon-container:hover .tooltip, .apps-icon-container:hover .tooltip, .notification-icon-container:hover .tooltip {
     opacity: 1;
 }
 
