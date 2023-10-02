@@ -34,9 +34,20 @@ console.log(sum());*/
 let userName = getUserNameFromEmail("alexw.lemon@gmail.com");
 console.log(userName);*/
 
-const toProperCase = (name) => {
-    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+// const toProperCase = (name) => {
+//     return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+// }
+
+// console.log(toProperCase("aLeXandER"));
+const myPerson = {
+    name: "Mitchel",
+    actions: {
+        hit: () => {console.log("Pow");},
+        hello: () => {console.log("Hello World!");}
+    }
 }
 
-console.log(toProperCase("aLeXandER"));
+delete myPerson;
 
+
+console.log(myPerson.name);
