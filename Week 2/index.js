@@ -1,4 +1,4 @@
-let number = 0;
+//let number = 0;
 
 /* do {
     number += 2;
@@ -39,15 +39,73 @@ console.log(userName);*/
 // }
 
 // console.log(toProperCase("aLeXandER"));
-const myPerson = {
-    name: "Mitchel",
-    actions: {
-        hit: () => {console.log("Pow");},
-        hello: () => {console.log("Hello World!");}
+
+
+// Chapter 17
+// const band = {
+//     vocals: "robert",
+//     guitar: "Jim",
+//     drums: "Alex",
+//     bass: "Ben"
+
+// }
+
+// function sings({ vocals }) {
+//     return `${vocals} sings!`
+// }
+
+// console.log(sings(band));
+
+// Chapter 18
+
+class Pizza {
+
+    crust;
+    size;
+    #sauce = "traditional"
+
+    constructor(pizzaSize) {
+        this.size = pizzaSize;
+        this.crust = "original";
+    }
+
+    getCrust() {
+        return this.crust;
+    }
+
+    setCrust(pizzaCrust) {
+        this.crust = pizzaCrust;
+    }
+
+    getSauce() {
+        return this.#sauce;
+    }
+
+}
+
+class SpecialtyPizza extends Pizza {
+    constructor(pizzaSize) {
+        super(pizzaSize);
+        this.type = "Figgy Don"
+    }
+
+    slice() {
+        console.log(`Our ${this.type} ${this.size} pizza has 8 slices! Comes with ${this.getSauce()}`)
     }
 }
 
-delete myPerson;
+const secretPizza = new SpecialtyPizza("12 inch");
+
+secretPizza.slice();
+
+secretPizza.size = "11 in"
+
+secretPizza.slice();
+
+const x = new Pizza("12 Inch");
+
+console.log(x.sauce)
 
 
-console.log(myPerson.name);
+
+
