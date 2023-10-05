@@ -26,24 +26,35 @@
 // parent.removeChild(parent.lastChild);
 
 // Javascript Event Listeners
-const parent = document.getElementById("main");
-const btn1 = document.getElementById("btn1");
-let index = 0;
+// const parent = document.getElementById("main");
+// const btn1 = document.getElementById("btn1");
+// let index = 0;
 
-const createDivs = (parent, iter) => {
-    const newDiv = document.createElement("div");
-    newDiv.textContent = iter;
-    newDiv.style.backgroundColor = "blue";
-    newDiv.style.height = "200px";
-    newDiv.style.width = "200px";
-    newDiv.style.display = "flex";
-    newDiv.style.margin = "10px"
-    newDiv.style.justifyContent = "center";
-    newDiv.style.alignItems = "center";
-    parent.append(newDiv);
-}
+// const createDivs = (parent, iter) => {
+//     const newDiv = document.createElement("div");
+//     newDiv.textContent = iter;
+//     newDiv.style.backgroundColor = "blue";
+//     newDiv.style.height = "200px";
+//     newDiv.style.width = "200px";
+//     newDiv.style.display = "flex";
+//     newDiv.style.margin = "10px"
+//     newDiv.style.justifyContent = "center";
+//     newDiv.style.alignItems = "center";
+//     parent.append(newDiv);
+// }
 
-btn1.addEventListener("click", btnClicked = () => {
-    createDivs(parent, index);
-    index++;
-});
+// btn1.addEventListener("click", btnClicked = () => {
+//     createDivs(parent, index);
+//     index++;
+// });
+
+
+const nav = document.querySelector("nav");
+
+nav.addEventListener("mouseover", (event) => {
+    nav.style.height = "7vw";
+})
+
+nav.addEventListener("mouseout", (event) => {
+    nav.style.height = "4vw";
+})
