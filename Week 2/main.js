@@ -1,5 +1,6 @@
 // DOM - Document object model
 
+
 // const parent = document.getElementById("main");
 
 // const createDivs = (parent, iter) => {
@@ -58,3 +59,34 @@ nav.addEventListener("mouseover", (event) => {
 nav.addEventListener("mouseout", (event) => {
     nav.style.height = "4vw";
 })
+
+// const myObject = {
+//     name: "Alex",
+//     age: 18,
+//     hobbies: ["eat", "sleep", "code"],
+//     logName: function () {
+//         console.log(this.name);
+//     }
+// };
+
+// const myArray = ["eat", "sleep", "code"];
+
+// localStorage.setItem("mySessionStore", JSON.stringify(myArray));
+
+// const mySessionData = JSON.parse(localStorage.getItem("mySessionStore"));
+
+// console.log(mySessionData);
+
+// Chapter 24: Modules
+import * as Guitars from "./guitar.js";
+import User from "./user.js";
+
+const user1 = new User("alexanderwang@ufl.edu", "Alex");
+
+console.log(user1)
+console.log(user1.greeting());
+
+console.log(Guitars.playGuitar());
+console.log(Guitars.shredding());
+console.log(Guitars.plucking())
+
