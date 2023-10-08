@@ -34,22 +34,13 @@
 //         });
 //     });
 
-const myUsers = {
-    userList: []
+const requestJoke = async (firstName, lastName) => {
+
+    const response = await fetch(`http://api.icndb.com/jokes/random?firstName=${firstName}&lastName=${lastName}`);
+
+    const jsonResponse = await response.json();
+
+    console.log(jsonResponse.value.joke);
 }
 
-const myCoolFunction = async () => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const jsonUserData = await response.json();
-    return jsonUserData;
-}
-
-const anotherFunc = async () => {
-    const data = await myCoolFunction();
-    myUsers.userList = data;
-    console.log(myUsers.userList);
-}
-
-anotherFunc();
-console.log(myUsers.userList);
-
+requestJoke("Johnny", "Smallwood");
